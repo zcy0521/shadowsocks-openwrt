@@ -1,0 +1,9 @@
+{
+  "server":"SS_SERVER_IP",
+  "server_port":8388,
+  "password":"HelloShadowsocks!",
+  "timeout":300,
+  "method":"chacha20-ietf-poly1305",
+  "mode":"tcp_and_udp",
+  "fast_open":true
+}
