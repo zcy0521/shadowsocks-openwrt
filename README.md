@@ -240,6 +240,7 @@ opkg install ca-certificates iptables-mod-tproxy
     }
   ],
   "routing": {
+    "domainStrategy": "IPIfNonMatch",
     "rules": [
       {
         "type": "field",
