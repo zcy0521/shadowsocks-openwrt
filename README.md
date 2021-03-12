@@ -158,16 +158,14 @@ mkdir /etc/dnsmasq.d
 echo "conf-dir=/etc/dnsmasq.d" >> /etc/dnsmasq.conf
 ```
 
-- 新建文件[`/etc/dnsmasq.d/whitelist.conf`](https://github.com/shadowsocks/luci-app-shadowsocks/wiki/GfwList-Support)
+- 新建文件[`/etc/dnsmasq.d/gfw.conf`](https://github.com/shadowsocks/luci-app-shadowsocks/wiki/GfwList-Support)
 
 ```
-# synology
-server=/checkip.synology.com/127.0.0.1#5353
-ipset=/checkip.synology.com/ss_spec_dst_bp
+server=/domain.com/127.0.0.1#5353
+ipset=/domain.com/ss_spec_dst_bp
 
-# qnap
-server=/checkip.dyndns.org/127.0.0.1#5353
-ipset=/checkip.dyndns.org/ss_spec_dst_bp
+server=/domain.com/127.0.0.1#5353
+ipset=/domain.com/ss_spec_dst_fw
 ```
 
 ## DNS防污
